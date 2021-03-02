@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import "./App.css";
 import axios from 'axios';
-
+import api from './services/api'
 export default function App() {
   // const [planet, setPlanet] = useState({});
   const [population, setPopulation] = useState('');
@@ -13,7 +13,7 @@ const [gravity, setGravity] =useState('');
 
 
   useEffect(() => {
-    axios.get(`http://swapi.dev/api/planets/${page}`).then((response) => {
+    api.get(`${page}`).then((response) => {
       // setPlanet(response.data);
       // console.log(response.data)
       setName(response.data.name);
