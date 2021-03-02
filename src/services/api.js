@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 let api = axios.create({
-    baseURL:'https://swapi.dev/api/planets/',
+    baseURL:'http://swapi.dev/api/planets/',
   
     
 });

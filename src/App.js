@@ -13,7 +13,7 @@ const [gravity, setGravity] =useState('');
 
 
   useEffect(() => {
-    axios.get(`https://swapi.dev/api/planets/${page}`).then((response) => {
+    axios.get(`http://swapi.dev/api/planets/${page}`).then((response) => {
       // setPlanet(response.data);
       // console.log(response.data)
       setName(response.data.name);
